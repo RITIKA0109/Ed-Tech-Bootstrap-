@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SignUp or LogIn</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="bootstrap-3.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-3.4.1-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        navbar-default -> Light BG Dark Font
+        navbar-inverse -> Dark BG light Font
+     -->
+    <!-- 
+        navbar-fixed-top -> Fixes the navbar at top even when the page is scrolled down
+      -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- <button class="navbar-toggle" data-target="#primary-menu" data-toggle="collapse">
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                </button> -->
+                <div class="navbar-brand">
+                    <a href="index.html">edureka!</a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="primary-menu">
+                <ul class="nav navbar-nav">
+                    <li><a href="our-story.html">Our Story</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses
+                            <i class="caret"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cwd.html">Complete Web Developer</a></li>
+                            <li><a href="node.html">Node js</a></li>
+                            <li><a href="angular.html">Angular</a></li>
+                        </ul>
+                    </li>
+
+                    </li>
+                    <li><a href="signup.html">Signup</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Not yet registered ?</h2>
+                <hr>
+                <h3>Signup</h3>
+                <hr>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="name">
+                            Name:
+                        </label>
+                        <div class="col-md-6">
+                            <input type="text" name="name" id="name" class="form-control"
+                                placeholder="Enter your name" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="email">
+                            Email:
+                        </label>
+                        <div class="col-md-6">
+                            <input type="email" name="email" id="email" class="form-control"
+                                placeholder="Enter your email" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="password">
+                            Password:
+                        </label>
+                        <div class="col-md-6">
+                            <input type="password" name="password" id="password" class="form-control"
+                                placeholder="Password Please" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="confirm-password">
+                            Confirm Password:
+                        </label>
+                        <div class="col-md-6">
+                            <input type="password" name="confirm-password" id="confirm-password" class="form-control"
+                                placeholder="Confirm Password" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="checkbox-grp-position">
+                            Position:
+                        </label>
+                        <div class="col-md-10" id="checkbox-grp-position">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="Web Developer" name="checkbox-position" />
+                                Web Developer
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="Web Developer" name="checkbox-position" />
+                                Data Scientist
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="Web Developer" name="checkbox-position" />
+                                Systems Engineer
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="Web Developer" name="checkbox-position" />
+                                Automation Engineering
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <input tye="submit" value="Reset" class="btn btn-default">
+                            <input tye="submit" value="Sign up" class="btn btn-primary">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <h2>Already have an account</h2>
+                <hr>
+                <h3>Login</h3>
+                <hr>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="username">
+                            Username:
+                        </label>
+                        <div class="col-md-6">
+                            <input type="text" name="username" id="username" class="form-control"
+                                placeholder="Enter your username" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="password">
+                            Password:
+                        </label>
+                        <div class="col-md-6">
+                            <input type="password" name="password" id="login-password" class="form-control"
+                                placeholder="Password Please" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <input tye="submit" value="Reset" class="btn btn-default">
+                            <input tye="submit" value="Login" class="btn btn-primary">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <footer style="margin-top:20px">
+        <div class="text-center">
+            Copyright &copy; 2015 Brain4ce Education Solutions Pvt. Ltd. All right reserved.
+            <a data-toggle="modal" href='#modal-tnc'>Terms and Conditons</a>
+        </div>
+
+        <div class="modal fade" id="modal-tnc">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h2 class="modal-title">Terms and conditions</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quos cum eos voluptate
+                            placeat quis animi doloribus modi itaque facilis? Debitis enim ab magnam eos soluta dolorem
+                            sapiente commodi eius!
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
